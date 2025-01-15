@@ -9,6 +9,12 @@
     height: auto;
 }
 
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 /*
 Zařiď, aby se fotogalerie měnila tak, že pro různou šířku prohlížeče je na jednom řádku jiný počet obrázků vedle sebe.
 
@@ -20,3 +26,34 @@ do 540px - 1 obrázek na řádku (= mobil)
 > 1000px - 6 obrázky vedle sebe
 */
 
+
+
+@media (max-width: 540px) {
+    .foto {
+        flex: 1 1 99%
+    }
+}
+
+@media (min-width: 541px) and (max-width: 660px){
+    .foto {
+        flex: 49%;
+    }
+}
+
+@media (min-width: 661px) and (max-width: 800px){
+    .foto {
+        flex: 32%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    .foto {
+        flex: 24%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .foto {
+        flex: 16%;
+    }
+}

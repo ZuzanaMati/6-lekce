@@ -1,0 +1,35 @@
+.obdelnik {
+    background-color: red;
+}
+
+.obdelnik:hover {
+    background-color: aqua;
+}
+
+@media (max-width: 500px) {
+    .obdelnik {
+        background-color: green;
+        font-size: 100px;
+        border: 10px dashed deeppink;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: blue
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .obdelnik {
+        background-color: darkblue;
+    }
+}
+
+/* hvezdicka znamena ze to ma byt u vsech elementu a tohle je verze pro tisk, screen je pak pro zobrazeni
+na pc */
+
+@media print {
+    *{
+    background: none !important; 
+    color: black !important;
+    } }
